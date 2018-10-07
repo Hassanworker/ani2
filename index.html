@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>기침소리</title>
+	<style type="text/css">
+		
+		html, body {
+    height: 100%;
+    background-color: black;
+    background-image: "im2.png"
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.back {
+    height: 100%;}
+
+
+
+
+
+
+
+    	#eye{width:300px; height:300px;  position:absolute; left:300px; top:100px;
+		 
+
+		 
+		 animation:stare 8s infinite;
+		  
+}
+
+@keyframes stare{
+		10%{position:absolute; left:0px;   top: 0px; }
+		20%{position:absolute; left:400px; bottom: 200px;}
+		30%{position:absolute; right:250px; top: 120px; width: 150px; height: 150px;}
+		40%{position:absolute; left:450px; top: 350px;}
+		50%{position:absolute; left:720px; top:50px; width: 1200px; height: 1200px;}
+		70%{position:relative; left:60px; top:450px;}
+		80%{position:absolute; right: 250px; top: 10px;}
+		90%{position:absolute; right: :0px; top:300px; width: 0px; height: 0px;}}
+
+
+		#eye2{width:115px; height:115px; position: absolute; right:200px; bottom:150px;
+
+		animation: observe 3s infinite;	
+
+
+
+	}
+
+
+
+
+@keyframes observe {
+
+	5% {position:  absolute; width:600px height600px;}
+	10%{position: absolute; transform:rotate(0);}
+	20%{position: absolute; transform:  rotate(120deg);}
+	30%{position: absolute; right:20px;	transform: rotate(240deg);}
+	40%{position: absolute; width:300px; height: 300px; right: 50px; transform:rotate(360deg);}
+	50%{position: absolute; right: 0px;}
+	80%{position: absolute; right: 30px;}
+	90%{position: absolute; width: 800px; height : 800px;}
+	100%{position: absolute; width: 0px; height: 0px;}
+
+
+
+}
+
+
+
+
+		#sin{position: absolute; width:650px; height: 650px; left: 200px; top: 600px; animation: ddd 0.1s infinite; }
+		
+		
+		@keyframes ddd {from{left:400px;} to{left:380px;}}
+
+
+	    #me{position: absolute; width: 300px; height: 300px; left: 400px; top: 120px;
+		animation: bunjjeock 3s infinite;}
+		
+
+
+	@keyframes bunjjeock {
+	0%{position:absolute; transform: scale(2);}	
+   10%{position:absolute; transform: scale(1.6);}
+   30%{position:absolute; transition: scale(0.8);}	
+   50%{position:absolute; transform: scale(0);}
+   70%{position:absolute; transform: scale(1.2);}
+   80%{position:absolute; transform: scale(2);}
+   90%{position:absolute; transform: scale(1.3);}
+}
+
+
+
+#gsb{position: absolute; display: none; }
+
+
+
+
+	</style>
+	
+
+
+
+
+
+</head>
+<body>
+	
+
+	<img id=goo src ="im1.png">
+	<img id=sin src ="im2.png">
+	<img id=eye src ="im3.png">
+	<img id=eye2 src ="im3.png">
+	<img id=me src ="monoeye.png">	
+	<video id=gsb src="vf.mp4" type="video/mp4">
+
+
+<script type="text/javascript">
+	
+var toggle = "off"
+sin.onclick=function(){
+			if(toggle == "off"){
+			toggle = "on";
+				vid.play();
+				vid.style.width="500px";
+				vid.style.height="350px";
+				gsb.pause();
+			vid.currentTime=0;
+			}
+			else{ 
+			toggle = "off";
+			
+			vid.pause();
+			vid.style.width="0%";
+			vid.style.height="0%";	
+			}
+			}	
+
+			{
+			if(toggle == "off"){
+			toggle = "on";
+			gsb.play();
+			gsb.currentTime=0;
+			vid.pause();
+			vid.style.width="0%";
+			vid.style.height="0%";
+			}
+			else{ 
+			toggle = "off";
+			gsb.pause();
+			}
+			}	
+
+	
+
+</script>
+
+
+</body>
+</html>
